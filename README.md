@@ -4,7 +4,7 @@ execution of a program.  Profiling a program using ```gprof```
 involves compiling the code with the ```-pg``` option to embed
 instrumentation code in the executable file.  When the instrumented executable is run data is written to a file (```gmon.out```).  The ```gprof``` tool uses this data to display information about how much time was spent in each function.
 
-Unless you have ```gprof``` installed on your local machine already, you should work on this exercise on ```timberlake.cse.buffalo.edu```.
+Unless you have ```gprof``` installed on your local machine already, you should work on this exercise on ```cerf.cse.buffalo.edu```.
 
 Here are some useful resources for you:
 1. [the ```gprof``` manual](https://sourceware.org/binutils/docs/gprof/index.html#Top)
