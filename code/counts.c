@@ -45,7 +45,7 @@ int * letterCountsSlow(char * filename) {
       while (index < ch) {
 	index++;
       }
-      counts[index]++;
+      counts[index-'a']++;
     }
     else {
       counts[26]++;
