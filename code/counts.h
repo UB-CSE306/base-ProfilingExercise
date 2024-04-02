@@ -3,6 +3,7 @@
 
 int * letterCounts(char * filename);
 int * letterCountsSlow(char * filename);
-void printCounts(int * counts);
+int * letterCountsGlacial(char * filename);
+void printCounts(int * counts, char * filename, char * datafile);
 
 #endif
