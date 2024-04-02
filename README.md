@@ -2,9 +2,9 @@
 
 This is a first exercise in using the ```gprof``` tool to profile the
 execution of a program.  Profiling a program using ```gprof```
-involves compiling the code with the ```-pg``` option to embed
+involves compiling the code with additional flags to embed
 instrumentation code in the executable file.  Look at the included
-`Makefile` for details.
+`Makefile` and referenced documentation for details.
 
 When the instrumented executable is run data is written to a file
 (```gmon.out```).  The ```gprof``` tool uses this data to display
