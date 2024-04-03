@@ -27,13 +27,13 @@ $(EXE): counts.o
 
 .PHONY: andRunPerformance
 andRunPerformance:
-	make clean
-	make $(EXE)
-	./$(EXE)
-	gprof -b ./$(EXE) > analyze.txt
-	gcov $(SRC) 
-	echo "Look at analyze.txt for gprof timing data"
-	echo "Look at counts.c.gcov for gcov annotated source code with execution counts"
+	@make clean
+	@make $(EXE)
+	@./$(EXE) ../data/file00
+	@gprof -b ./$(EXE) > analyze.txt
+	@gcov ./$(EXE).c
+	@echo "Look at analyze.txt for gprof timing data"
+	@echo "Look at counts.c.gcov for gcov annotated source code with execution counts"
 
 .PHONY: clean
 clean: 
