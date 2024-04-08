@@ -19,11 +19,11 @@ OBJECTS = counts.o
 EXE = counts
 CFLAGS = -std=c11 -Wall -O0 -pg -fprofile-arcs -ftest-coverage
 
-counts.o: counts.c counts.h
-	$(CC) -c $(CFLAGS) counts.c
-
 $(EXE): counts.o
 	$(CC) $(CFLAGS) -L $(LIB_PATH) -I $(INCLUDE_PATH) -o $(EXE) $(OBJECTS) main.c
+
+counts.o: counts.c counts.h
+	$(CC) -c $(CFLAGS) counts.c
 
 .PHONY: andRunPerformance
 andRunPerformance:
